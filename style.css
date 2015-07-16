@@ -1,0 +1,303 @@
+
+@font-face
+{
+  font-family:"comics";
+  src:url('font/SF Comic Script Shaded');
+}
+@font-face
+{
+  font-family: "typeWriter";
+  src:url('font/typewriter');
+}
+html
+{
+  background-color: rgba(185, 181, 173, 0.34);
+  background-image: url("img/papier");
+}
+
+body {
+  font-family: "comics";
+}
+#header
+{
+  margin-bottom: 20px;
+}
+.clap
+{
+  background-color: #000;
+  height: 50px;
+}
+.clear
+{
+  clear: both;
+}
+.content
+{
+  width: 920px;
+  margin: auto;
+}
+h1
+{
+  font-size: 3.0em;
+}
+li
+{
+  list-style-type: none;
+  float: left;
+  margin-left: 60px;
+  font-size: 1.2em;
+}
+nav
+{
+  clear: both;
+}
+.slideshow
+{  
+  width: 100%;  
+  overflow: hidden;
+}  
+      
+.slideshow .slider 
+{    
+  list-style: none;  
+}
+#aboutMe
+{
+  width: 600px;
+  font-size: 2.5em;
+  margin: auto;
+
+}
+.aboutMe
+{
+  background-image: url("img/dessin.png");
+  background-repeat: no-repeat;
+  background-position: 75% 100%;
+  min-height: 493px;
+  border: 1px solid #EDE9E9;
+  background-size: 70%;
+}
+.nav li:nth-child(1):hover
+{
+  color: #5E25E1;
+  cursor: pointer;
+}
+
+.nav li:nth-child(2):hover
+{
+  color: #F08021;
+  cursor: pointer;
+}
+.nav li:nth-child(3):hover
+{
+  color: #22C858;
+  cursor: pointer;
+}
+.accueil:hover
+{
+  color: #F08021;
+  cursor: pointer;
+}
+span
+{
+  color: #F08021;
+}
+.square, .square_deco
+{
+  height: 460px;
+  border:2px solid #000;
+  float: left;
+  box-shadow: -14px 0px 61px #000 inset;
+  width: 174px;
+}
+.square:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+h2
+{
+  text-align: center;
+  margin-top: 35px;
+  font-size: 1.2em;
+}
+#html
+{
+  background-color: #E1663E;
+}
+
+#js
+{
+  background-color: #EDD735;
+}
+
+#php
+{
+  background-color: #1CAFE9;
+}
+
+#projet
+{
+  background-color: #60E951;
+}
+
+#jsA
+{
+  background-color: #21E7D2
+}
+
+#phpA
+{
+  background-color: #E620E3;
+}
+
+#mvc
+{
+  background-color:  #E3DFBB;
+}
+
+#projetA
+{
+  background-color: #3028B3;
+  -moz-transform: rotate(-41deg);
+  -webkit-transform: rotate(-41deg);
+  transform: rotate(-41deg);
+  margin-left: 128px;
+  border-radius: 5px;
+}
+#projetA:hover
+{
+  background-color: #3028B3;
+  transform: rotate(0deg);
+  margin-left: 128px;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+#deco
+{
+  margin-left: 160px;
+  background-color: #A30AFF;
+}
+input, textarea 
+{
+  padding: 8px 10px;
+  color: #9F9F9F;
+  border: 1px solid #444;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset rgba(0,0,0,0.35) 2px 2px 12px;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  display: inline-block;
+  float: le;
+  margin-bottom: 25px;
+  font-family: 'typeWriter';
+  font-weight: bold;
+}
+textarea
+{
+  width: 448px;
+  min-height: 140px;
+}
+input:hover, textarea:hover
+{
+  border: 1px solid #999
+}
+
+input:focus, textarea:focus
+{
+  color: black;
+  border: 1px solid #0B8CB8;
+  box-shadow: inset rgba(0,0,0,0.35) 2px 2px 12px, #0B8CB8 0 0 10px;
+  outline: 0;
+}
+.form
+{
+  text-align: center;
+}
+footer
+{
+  text-align: center;
+}
+#project
+{
+  display: none;
+  width: 0px;
+  background-color: #FFF;
+}
+#connect
+{
+  float: right;
+  width: 316px;
+}
+label
+{
+  color: #391377;
+  font-size: 1.5em;
+}
+.description
+{
+  float: left;
+  margin-left: 20px;
+}
+.project img
+{
+  float: left;
+}
+.project
+{
+  margin-top: 50px;
+}
+.conteneur
+{
+  width: 2000px;
+  margin: auto;
+}
+@media screen and (max-width: 360px) {
+
+  html
+  {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .square, .square_deco
+  {
+    height: 500px;
+    width: 500px;
+  }
+  input
+  {
+    border: 1px solid black;
+    background: #FFF;
+  }
+}
+@media screen and (max-width: 1280px) {
+
+  html
+  {
+    width: 1280px;
+    font-size: 1.5em;
+  }
+
+}
+@media all and (orientation: portrait) {
+
+  .content
+  {
+    width: 1250px;
+  }
+  .square, .square_deco
+  {
+      width: 299px;
+      height: 300px;
+  }
+}
+@media screen and (min-width: 1280px) {
+
+  html
+  {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+}
